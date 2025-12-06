@@ -45,6 +45,12 @@ short HowManyRounds() {
 	do {
 		cout << "How many rounds do you want to play? 1 to 10\n";
 		cin >> rounds;
+		while (cin.fail()) {
+			cin.clear();
+			cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+			cout << "Worng Value, please enter how many rounds again? ";
+			cin >> rounds;
+		}
 	} while (rounds <= 0 || rounds > 10);
 	return rounds;
 }
