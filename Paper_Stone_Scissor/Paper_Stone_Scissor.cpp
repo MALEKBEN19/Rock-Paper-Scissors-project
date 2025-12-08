@@ -182,7 +182,7 @@ void GameOverMenu(short round,int Playercounter,int computercounter,int nowinner
 
 	cout << "\n\n\t\t\t__________________________________________\n\n";
 	cout << "\t\t\t           +++ Game Over +++ \n";
-	cout << "\t\t\t__________________________________________\n\n\n";
+	cout << "\t\t\t__________________________________________\n\n";
 	cout << "\t\t\t_____________[Game Result]________________\n\n";
 	cout << "\t\t\t Game round        : " << round << endl;
 	cout << "\t\t\t Player 1 won time : " << Playercounter << endl;
